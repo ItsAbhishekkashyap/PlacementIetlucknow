@@ -4,7 +4,7 @@ body {
     "Helvetica Neue", Arial;
 }
 
-/* custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -17,19 +17,10 @@ body {
   border-radius: 999px;
 }
 
-/* small accessible focus ring */
 :focus {
   outline: 2px solid rgba(44, 116, 179, 0.15);
   outline-offset: 3px;
 }
-
-/* Hero section with college background */
-/* .hero-section {
-  background: linear-gradient(rgba(10, 38, 71, 0.85), rgba(10, 38, 71, 0.92)),
-    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")
-      no-repeat center center;
-  background-size: cover;
-} */
 
 
 
@@ -117,23 +108,10 @@ body {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Stats counter animation */
 .stat-number {
   transition: all 1s ease-out;
 }
 
-/* Logo marquee animation */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -147,7 +125,7 @@ body {
   animation: scroll 30s linear infinite;
 }
 
-/* Hover effects */
+
 .hover-lift {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

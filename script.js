@@ -1,17 +1,17 @@
-// Mobile menu toggle
+
     document.getElementById('mobile-open').addEventListener('click', function() {
       const menu = document.getElementById('mobile-menu');
       menu.classList.toggle('hidden');
     });
 
-    // Close mobile menu when clicking on a link
+  
     document.querySelectorAll('#mobile-menu a').forEach(link => {
       link.addEventListener('click', () => {
         document.getElementById('mobile-menu').classList.add('hidden');
       });
     });
 
-    // Smooth scrolling for anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -25,13 +25,13 @@
       });
     });
 
-    // Animate statistics numbers
+  
     function animateStats() {
       const statElements = document.querySelectorAll('.stat-number');
       statElements.forEach(element => {
         const target = parseInt(element.getAttribute('data-target'));
-        const duration = 2000; // 2 seconds
-        const step = target / (duration / 16); // 60fps
+        const duration = 2000;
+        const step = target / (duration / 16);
         let current = 0;
         
         const timer = setInterval(() => {
@@ -46,7 +46,7 @@
       });
     }
 
-    // Initialize stats animation when stats section is in view
+   
     const statsSection = document.getElementById('stats');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -62,7 +62,7 @@
 
 
      document.addEventListener('DOMContentLoaded', function() {
-      // Add loaded class to trigger animations
+     
       setTimeout(() => {
         document.querySelector('.slide-in-left').style.animationPlayState = 'running';
         document.querySelector('.slide-in-right').style.animationPlayState = 'running';
