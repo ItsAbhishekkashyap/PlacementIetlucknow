@@ -1,17 +1,4 @@
 
-    document.getElementById('mobile-open').addEventListener('click', function() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    });
-
-  
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.add('hidden');
-      });
-    });
-
-    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
