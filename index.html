@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-xl mb-3">Industry Partnerships</h3>
+          <h5 class="font-bold text-xl mb-3">Industry Partnerships</h5>
           <p class="text-muted">We maintain strong relationships with over 200 companies across diverse sectors for placements and internships.</p>
         </div>
 
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-xl mb-3">Skill Development</h3>
+          <h5 class="font-bold text-xl mb-3">Skill Development</h5>
           <p class="text-muted">Comprehensive training programs including technical workshops, soft skills, and mock interviews to enhance employability.</p>
         </div>
 
@@ -366,7 +366,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-xl mb-3">Career Guidance</h3>
+          <h5 class="font-bold text-xl mb-3">Career Guidance</h5>
           <p class="text-muted">Personalized counseling and mentorship to help students make informed career choices and achieve their professional goals.</p>
         </div>
       </div>
@@ -426,13 +426,30 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
 
       
-      <div class="relative overflow-hidden py-8">
-        <div class="flex animate-scroll gap-16">
-          <img src="images/pastRecruiter/adobe.png" alt="Adobe" class="h-20 transition-all">
+
+
+
+     
+
+
+
+
+       
+     <div class="relative group overflow-hidden py-8 px-4 sm:px-12">
+    <button id="scroll-left" class="absolute left-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 p-2 shadow-lg rounded-full hover:bg-brand-700 hover:text-white transition-all focus:outline-none border border-gray-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+
+    <div id="logo-slider" class="flex items-center gap-12 sm:gap-16 overflow-hidden whitespace-nowrap scroll-smooth">
+         <img src="images/pastRecruiter/adobe.png" alt="Adobe" class="h-20 transition-all">
           <img src="images/pastRecruiter/amazon.png" alt="Amazon" class="h-28 transition-all">
           <img src="images/pastRecruiter/google.png" alt="Google" class="h-28 transition-all">
+          <img src="../images/pastRecruiter/Intuit.png" alt="Company 2 logo" class="h-16 w-20" loading="lazy">
           <img src="images/pastRecruiter/globallogic.png" alt="GlobalLogic" class="h-28 transition-all">
           <img src="images/pastRecruiter/zeta.png" alt="Zeta" class="h-28 transition-all">
+          <img src="../images/pastRecruiter/uber.svg" alt="Company 2 logo" class="h-28" loading="lazy">
+          <img src="../images/pastRecruiter/globallogic.png" alt="Company 4 logo" class="h-28" loading="lazy">
+          <img src="../images/pastRecruiter/sprinklr.png" alt="Company 9 logo" class="h-28" loading="lazy">
           <img src="images/pastRecruiter/tcs.png" alt="TCS" class="h-28 transition-all">
           <img src="images/pastRecruiter/shapoorji.png" alt="Shapoorji" class="h-28 transition-all">
           <img src="images/pastRecruiter/matrixcare.png" alt="MatrixCare" class="h-28 transition-all">
@@ -441,12 +458,17 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="images/pastRecruiter/soti.png" alt="SOTI" class="h-28 transition-all">
           <img src="images/pastRecruiter/paytm.png" alt="Paytm" class="h-28 transition-all">
           <img src="images/pastRecruiter/sap.png" alt="SAP" class="h-28 transition-all">
-        </div>
-      </div>
+
+    </div>
+
+    <button id="scroll-right" class="absolute right-2 top-1/2 -translate-y-1/2 z-30 bg-white/90 p-2 shadow-lg rounded-full hover:bg-brand-700 hover:text-white transition-all focus:outline-none border border-gray-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </button>
+</div>
 
       <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-brand-50 rounded-2xl p-8">
-          <h3 class="font-bold text-xl mb-4">For Recruiters</h3>
+          <h5 class="font-bold text-xl mb-4">For Recruiters</h5>
           <ul class="space-y-3 text-muted">
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-brand-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -477,7 +499,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <div class="bg-brand-50 rounded-2xl p-8">
-          <h3 class="font-bold text-xl mb-4">Placement Process</h3>
+          <h5 class="font-bold text-xl mb-4">Placement Process</h5>
           <ol class="space-y-4 text-muted list-decimal list-inside">
             <li class="pl-2">Company registration and presentation</li>
             <li class="pl-2">Pre-placement talk and interaction</li>
@@ -485,11 +507,114 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="pl-2">Selection process (written test, GD, interview)</li>
             <li class="pl-2">Declaration of results and offer letters</li>
           </ol>
-          <a href="#" class="inline-block mt-6 text-brand-700 font-semibold hover:underline">View detailed process →</a>
+
         </div>
       </div>
     </div>
   </section>
+
+
+
+
+<section id="infrastructure" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-brand-800">Facilities</h2>
+      <div class="h-1.5 w-20 bg-brand-accent rounded-full mx-auto mt-4"></div>
+      <p class="text-muted mt-6 max-w-2xl mx-auto">
+        Explore our state-of-the-art facilities designed to foster innovation and academic excellence.
+      </p>
+    </div>
+
+    <div class="relative group">
+      
+      <button id="infra-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-6 z-10 p-3 rounded-full bg-white shadow-lg border border-gray-100 text-brand-800 hover:bg-brand-800 hover:text-white transition-all">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <button id="infra-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-6 z-10 p-3 rounded-full bg-white shadow-lg border border-gray-100 text-brand-800 hover:bg-brand-800 hover:text-white transition-all">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div id="infra-slider" class="flex gap-4 md:gap-6 overflow-x-hidden scroll-smooth snap-x snap-mandatory">
+        
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/snf.jpg" alt="Classroom" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm ">Students and faculty members posing outside the director's office after company placement interviews. </h5>
+          </div>
+        </div>
+
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/auditorium.png" alt="Labs" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-lg font-bold">Auditorium</h5>
+          </div>
+        </div>
+
+        
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/training session.jpg" alt="Auditorium" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm ">Offline Training Session managed by Training and Placement Cell</h5>
+          </div>
+        </div>
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/gd.jpg" alt="Library" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm">Group Discussion round conducted during recruitment drive</h5>
+          </div>
+        </div>
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/PI.jpg" alt="Library" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm">Personal interview round with company recruiters at TnP Office</h5>
+          </div>
+        </div>
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/offline test.jpg" alt="Library" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm">Offline test conducted as the part of the recruitment process</h5>
+          </div>
+        </div>
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/presentation.jpg" alt="Library" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm">Company presentation before the start of the selection process</h5>
+          </div>
+        </div>
+
+        <div class="min-w-full md:min-w-[calc(33.333%-16px)] snap-start relative h-[350px] md:h-[400px] overflow-hidden rounded-2xl shadow-sm border border-gray-100">
+          <img src="/images/training session.jpg" alt="Library" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6">
+            <h5 class="text-white text-sm">Offline training session aranged to prepare upcoming batches </h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 
@@ -518,7 +643,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             </div>
             <div class="text-center sm:text-left flex-1">
-              <h3 class="text-lg sm:text-xl lg:text-xl font-bold text-brand-800 mb-2 lg:mb-3">TEQIP - World Bank Project</h3>
+              <h5 class="text-lg sm:text-xl lg:text-xl font-bold text-brand-800 mb-2 lg:mb-3">TEQIP - World Bank Project</h5>
               <p class="text-muted mb-3 lg:mb-4 leading-relaxed text-sm lg:text-base">
                 Technical Education Quality Improvement Programme of Government of India (TEQIP) is being implemented as a World Bank assisted Project to improve the quality of technical education system in the country.
               </p>
@@ -577,7 +702,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
         <div class="bg-gradient-to-br from-brand-800 to-brand-700 rounded-2xl lg:rounded-3xl p-6 lg:p-8 text-white relative overflow-hidden">
           <div class="relative z-10">
-            <h3 class="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">Global Impact</h3>
+            <h5 class="text-xl lg:text-2xl font-bold mb-3 lg:mb-4">Global Impact</h5>
             <p class="text-white/90 mb-4 lg:mb-6 leading-relaxed text-sm lg:text-base">
               Institute of Engineering and Technology (IET) Lucknow is one of the few Institutions selected for TEQIP-I, II and III.
             </p>
@@ -649,7 +774,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-lg mb-3">Placement Policy</h3>
+          <h5 class="font-bold text-lg mb-3">Placement Policy</h5>
           <p class="text-muted mb-4">Rules &amp; eligibility criteria for campus drives, offers and PPOs.</p>
           <a href="#" class="text-brand-700 font-semibold flex items-center gap-2 group">
             <span>Read policy</span>
@@ -665,7 +790,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-lg mb-3">Internship & PPO Guidelines</h3>
+          <h5 class="font-bold text-lg mb-3">Internship & PPO Guidelines</h5>
           <p class="text-muted mb-4">Guidance on internships, stipend rules and pre-placement offers.</p>
           <a href="#" class="text-brand-700 font-semibold flex items-center gap-2 group">
             <span>Learn more</span>
@@ -681,7 +806,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
           </div>
-          <h3 class="font-bold text-lg mb-3">Career Resources</h3>
+          <h5 class="font-bold text-lg mb-3">Career Resources</h5>
           <ul class="text-muted space-y-2 mb-4">
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -777,7 +902,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
    
         <div class="bg-gradient-to-br from-brand-800 to-brand-700 rounded-2xl p-8 text-white">
-          <h3 class="text-2xl font-bold mb-6">Training & Placement Office</h3>
+          <h5 class="text-2xl font-bold mb-6">Training & Placement Office</h5>
           
           <div class="space-y-6">
             <div class="flex items-start gap-4">
@@ -861,7 +986,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         <!-- Campus Directions -->
         <div class="bg-gray-50 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-brand-800 mb-6">Visit Our Campus</h3>
+          <h5 class="text-2xl font-bold text-brand-800 mb-6">Visit Our Campus</h5>
           
           <div class="mb-6">
             <div class="bg-white rounded-xl overflow-hidden shadow-md">
