@@ -259,260 +259,167 @@
   });
 </script>
 
-    <!-- MAIN CONTENT -->
-    <main class="bg-white py-20" id="downloads">
-      <div class="max-w-6xl mx-auto px-6 lg:px-8">
-        <div class="mb-8">
-          <h1 class="text-3xl font-extrabold text-brand-800">Documents</h1>
-          
-        </div>
+   <main class="bg-gray-50/50 py-16" id="downloads">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    
+    <div class="mb-16 text-center">
+      <h1 class="text-4xl font-extrabold text-brand-800 tracking-tight">Resources</h1>
+      <div class="h-1.5 w-20 bg-brand-accent rounded-full mx-auto mt-4"></div>
+      <p class="mt-6 text-muted max-w-2xl mx-auto text-lg">
+        Official documents, placement policies, and department-specific brochures for students and recruiters.
+      </p>
+    </div>
 
-        <!-- Institute Documents -->
-        <div
-          class="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm"
-        >
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-semibold text-brand-800">
-              Institute Documents
-            </h2>
-            <div>
-              <button
-                id="downloadAllInstitute"
-                class="inline-flex items-center gap-2 text-sm bg-brand-700 hover:bg-brand-800 text-white px-3 py-2 rounded-full shadow"
-              >
-                Download All
-              </button>
-            </div>
+    <div class="mb-20">
+      <h2 class="text-xl font-bold text-brand-800 mb-8 flex items-center gap-3">
+        <span class="w-8 h-1 bg-brand-accent rounded-full"></span>
+        INSTITUTE DOCUMENTS
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white border-2 border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all group flex items-center gap-6">
+          <div class="p-4 bg-blue-50 text-blue-600 rounded-2xl shrink-0">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
           </div>
-
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="text-left text-muted">
-                  <th class="pb-3">S.No.</th>
-                  <th class="pb-3">Institute Documents</th>
-                  <th class="pb-3">Download</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y">
-                <tr class="py-4">
-                  <td class="py-4">1</td>
-                  <td class="py-4">Placement Brochure</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Placement_Brouchure_2025-26.pdf"
-                      class="download-btn inline-flex items-center gap-2 text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">2</td>
-                  <td class="py-4">Job Notification Form (JNF)</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/JNF_IET_Lucknow_2025-26.docx"
-                      class="download-btn inline-flex items-center gap-2 text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-bold text-brand-800 text-lg truncate">Placement Brochure</h3>
+            <p class="text-xs text-muted mb-4">Official Guide 2025-26</p>
+            <a href="../files/Placement_Brouchure_2025-26.pdf" download class="text-brand-700 font-bold text-sm flex items-center gap-2 hover:text-brand-accent transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download PDF
+            </a>
           </div>
         </div>
 
-        <!-- Other Documents -->
-        <div
-          class="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm"
-        >
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-semibold text-brand-800">
-              Other Documents
-            </h2>
-            <div>
-              <button
-                id="downloadAllStudent"
-                class="inline-flex items-center gap-2 text-sm bg-brand-700 hover:bg-brand-800 text-white px-3 py-2 rounded-full shadow"
-              >
-                Download All
-              </button>
-            </div>
+        <div class="bg-white border-2 border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:border-brand-accent/30 transition-all group flex items-center gap-6">
+          <div class="p-4 bg-blue-50 text-blue-600 rounded-2xl shrink-0">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
           </div>
-
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="text-left text-muted">
-                  <th class="pb-3">S. No</th>
-                  <th class="pb-3">Student Documents</th>
-                  <th class="pb-3">Download</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y">
-                <tr>
-                  <td class="py-4">1</td>
-                  <td class="py-4">Student Placement Policy</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Student_Placement_Policy.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">2</td>
-                  <td class="py-4">Resume Template</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Sample_Resume.docx"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">3</td>
-                  <td class="py-4">Training Recommendation Form</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Training_Form.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">4</td>
-                  <td class="py-4">Internship NOC Documents</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/internship_noc.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-bold text-brand-800 text-lg truncate">Job Notification Form</h3>
+            <p class="text-xs text-muted mb-4">Recruiter Registration (JNF)</p>
+            <a href="../files/JNF_IET_Lucknow_2025-26.docx" download class="text-brand-700 font-bold text-sm flex items-center gap-2 hover:text-brand-accent transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download DOCX
+            </a>
           </div>
         </div>
-
-        <!-- Departments Brochure -->
-        <div
-          class="bg-white border border-gray-200 rounded-2xl p-6 mb-8 shadow-sm"
-        >
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-semibold text-brand-800">
-              Departments Brochure
-            </h2>
-            <div>
-              <button
-                id="downloadAllDepartments"
-                class="inline-flex items-center gap-2 text-sm bg-brand-700 hover:bg-brand-800 text-white px-3 py-2 rounded-full shadow"
-              >
-                Download All
-              </button>
-            </div>
-          </div>
-
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="text-left text-muted">
-                  <th class="pb-3">S. No</th>
-                  <th class="pb-3">Departments Brochure</th>
-                  <th class="pb-3">Download</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y">
-                <tr>
-                  <td class="py-4">1</td>
-                  <td class="py-4">Computer Science and Engineering</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/CSE_brochure.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">2</td>
-                  <td class="py-4">Chemical Engineering</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Chemical_dept_2019-20.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">3</td>
-                  <td class="py-4">Civil Engineering</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Civil_dept_2019-20.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">4</td>
-                  <td class="py-4">Electrical Engineering</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Electrical_dept_2019-20.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">5</td>
-                  <td class="py-4">Electronics Engineering</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Electronics_dept_2019-20.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-4">6</td>
-                  <td class="py-4">Mechanical Engineering</td>
-                  <td class="py-4">
-                    <button
-                      data-file="../files/Mechanical_dept_2019-20.pdf"
-                      class="download-btn text-brand-700 hover:underline"
-                    >
-                      Click here
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        
       </div>
-    </main>
+    </div>
+
+    <div class="mb-20">
+      <h2 class="text-xl font-bold text-brand-800 mb-8 flex items-center gap-3">
+        <span class="w-8 h-1 bg-brand-accent rounded-full"></span>
+        STUDENT POLICIES & FORMS
+      </h2>
+      <div id="student-docs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        </div>
+    </div>
+
+    <div class="mb-20">
+      <h2 class="text-xl font-bold text-brand-800 mb-8 flex items-center gap-3">
+        <span class="w-8 h-1 bg-brand-accent rounded-full"></span>
+        DEPARTMENT BROCHURES
+      </h2>
+      <div id="dept-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+    </div>
+
+
+    <div id="study-material" class="pt-10">
+      <div class="bg-brand-900 rounded-[3rem] p-8 md:p-12 text-white relative overflow-hidden">
+        <div class="relative z-10">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+            <div>
+              <h2 class="text-3xl font-bold">Placement Preparation Hub</h2>
+              <p class="text-white/60 mt-2">Curated resources to crack top-tier technical and HR interviews.</p>
+            </div>
+            <a href="#" class="bg-brand-accent text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-brand-accent/20 hover:scale-105 transition-transform text-center">View All Assets</a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
+              <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div>
+              <h4 class="font-bold text-lg mb-2">DSA Handbooks</h4>
+              <p class="text-sm text-white/50 mb-4">Topic-wise data structures & algorithms notes from top alumni.</p>
+              <a href="#" class="text-brand-accent text-sm font-bold flex items-center gap-2">Access Drive <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
+              <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg></div>
+              <h4 class="font-bold text-lg mb-2">Interview Experiences</h4>
+              <p class="text-sm text-white/50 mb-4">Archive of technical interview questions from FAANG & Top MNCs.</p>
+              <a href="#" class="text-brand-accent text-sm font-bold flex items-center gap-2">Read Blogs <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
+              <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg></div>
+              <h4 class="font-bold text-lg mb-2">Aptitude & Core</h4>
+              <p class="text-sm text-white/50 mb-4">Practice sets for Quant, Logical, and Core Subjects (OS, DBMS).</p>
+              <a href="#" class="text-brand-accent text-sm font-bold flex items-center gap-2">Download Packs <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-brand-accent/10 rounded-full blur-3xl"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Student Docs Data
+    const studentDocs = [
+        { name: "Placement Policy", path: "../files/Student_Placement_Policy.pdf", type: "PDF" },
+        { name: "Resume Template", path: "../files/Sample_Resume.docx", type: "DOCX" },
+        { name: "Training Form", path: "../files/Training_Form.pdf", type: "PDF" },
+        { name: "Internship NOC", path: "../files/internship_noc.pdf", type: "PDF" }
+    ];
+
+    // Dept Data
+    const depts = [
+        { name: "Computer Science & Eng.", path: "../files/CSE_brochure.pdf" },
+        { name: "Chemical Engineering", path: "../files/Chemical_dept.pdf" },
+        { name: "Civil Engineering", path: "../files/Civil_dept.pdf" },
+        { name: "Electrical Engineering", path: "../files/EE_dept.pdf" },
+        { name: "Electronics Engineering", path: "../files/ECE_dept.pdf" },
+        { name: "Mechanical Engineering", path: "../files/ME_dept.pdf" }
+    ];
+
+    // Render Student Docs
+    const studentGrid = document.getElementById('student-docs-grid');
+    studentDocs.forEach(doc => {
+        studentGrid.innerHTML += `
+            <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all group">
+                <div class="text-[10px] font-bold text-brand-accent uppercase mb-2">${doc.type}</div>
+                <h3 class="font-bold text-brand-800 mb-6 h-10 overflow-hidden text-sm leading-tight">${doc.name}</h3>
+                <a href="${doc.path}" download class="w-full py-2 bg-blue-400 text-white rounded-lg text-xs font-bold hover:bg-brand-700 hover:text-white transition-all flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Download
+                </a>
+            </div>
+        `;
+    });
+
+    // Render Dept Brochures
+    const deptGrid = document.getElementById('dept-grid');
+    depts.forEach(dept => {
+        deptGrid.innerHTML += `
+            <div class="flex items-center justify-between p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:border-brand-accent transition-all group">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-10 h-10 bg-brand-50 text-brand-700 rounded-xl flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                  </div>
+                  <span class="text-sm font-bold text-brand-800 truncate">${dept.name}</span>
+                </div>
+                <a href="${dept.path}" download class="p-2 text-brand-700 hover:bg-brand-700 hover:text-white rounded-lg transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                </a>
+            </div>
+        `;
+    });
+});
+</script>
 
     <!-- FOOTER -->
    <footer class="bg-brand-900 text-white pt-16 pb-8">
