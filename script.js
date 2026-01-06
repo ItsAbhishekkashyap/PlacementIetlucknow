@@ -147,3 +147,65 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
+// facility code
+
+document.addEventListener("DOMContentLoaded", () => {
+    const infraSlider = document.getElementById('infra-slider');
+    const infraNext = document.getElementById('infra-next');
+    const infraPrev = document.getElementById('infra-prev');
+
+    if (infraSlider && infraNext && infraPrev) {
+       
+        const getScrollAmount = () => {
+            const firstCard = infraSlider.querySelector('div');
+            const style = window.getComputedStyle(infraSlider);
+            const gap = parseInt(style.columnGap) || 0;
+            return firstCard.offsetWidth + gap;
+        };
+
+      
+        const moveSlider = (direction) => {
+            const amount = getScrollAmount();
+            
+            if (direction === 'next') {
+                
+                if (infraSlider.scrollLeft + infraSlider.offsetWidth >= infraSlider.scrollWidth - 10) {
+                    infraSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    infraSlider.scrollBy({ left: amount, behavior: 'smooth' });
+                }
+            } else {
+                
+                if (infraSlider.scrollLeft <= 0) {
+                    infraSlider.scrollTo({ left: infraSlider.scrollWidth, behavior: 'smooth' });
+                } else {
+                    infraSlider.scrollBy({ left: -amount, behavior: 'smooth' });
+                }
+            }
+        };
+
+        infraNext.addEventListener('click', () => moveSlider('next'));
+        infraPrev.addEventListener('click', () => moveSlider('prev'));
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === "ArrowRight") {
+                moveSlider('next');
+            } else if (e.key === "ArrowLeft") {
+                moveSlider('prev');
+            }
+        });
+
+        let autoPlayInterval = setInterval(() => moveSlider('next'), 5000);
+
+        infraSlider.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        infraSlider.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(() => moveSlider('next'), 5000);
+        });
+
+        [infraNext, infraPrev].forEach(btn => {
+            btn.addEventListener('focus', () => clearInterval(autoPlayInterval));
+        });
+    }
+});
