@@ -313,174 +313,184 @@
 
   <!-- Main content -->
 
- <main class="bg-gray-50/50 py-16" id="contact-us">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+  <main class="bg-gray-50/50 py-16" id="contact-us">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
-    <div class="mb-16 text-center">
-      <h1 class="text-4xl font-extrabold text-brand-800 tracking-tight">Contact Us</h1>
-      <div class="h-1.5 w-20 bg-brand-accent rounded-full mx-auto mt-4 shadow-sm"></div>
-      <p class="mt-6 text-muted max-w-2xl mx-auto text-lg leading-relaxed">
-        Find contact details of our Director, T&P Office, co-ordinators and team members below.
-      </p>
-    </div>
-
-    <div class="mb-20">
-      <h2 class="text-xl font-bold text-brand-800 mb-10 flex items-center gap-3">
-        <span class="w-10 h-1 bg-brand-accent rounded-full"></span>
-        PLACEMENT IN-CHARGE
-      </h2>
-      <div id="leadership-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="mb-16 text-center">
+        <h1 class="text-4xl font-extrabold text-brand-800 tracking-tight">Contact Us</h1>
+        <div class="h-1.5 w-20 bg-brand-accent rounded-full mx-auto mt-4 shadow-sm"></div>
+        <p class="mt-6 text-muted max-w-2xl mx-auto text-lg leading-relaxed">
+          Find contact details of our Director, T&P Office, co-ordinators and team members below.
+        </p>
       </div>
-    </div>
 
-    <div class="space-y-24">
-      <div>
+      <div class="mb-20">
         <h2 class="text-xl font-bold text-brand-800 mb-10 flex items-center gap-3">
           <span class="w-10 h-1 bg-brand-accent rounded-full"></span>
-          PLACEMENT CO-ORDINATORS
+          PLACEMENT IN-CHARGE
         </h2>
-        <div id="coordinators-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        </div>
+        <div id="leadership-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10"></div>
       </div>
 
-      <div>
-        <h2 class="text-xl font-bold text-brand-800 mb-10 flex items-center gap-3">
-          <span class="w-10 h-1 bg-brand-accent rounded-full"></span>
-          WEB-ADMIN TEAM
-        </h2>
-        <div id="webadmin-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        </div>
-      </div>
+      <div class="space-y-6">
 
-      <div>
-        <h2 class="text-xl font-bold text-brand-800 mb-10 flex items-center gap-3">
-          <span class="w-10 h-1 bg-brand-accent rounded-full"></span>
-          PLACEMENT TEAM
-        </h2>
-        <div id="team-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="border border-gray-100 bg-white/50 rounded-3xl overflow-hidden shadow-sm">
+          <button onclick="toggleSection('coordinators-wrapper', 'arrow-coord')"
+            class="w-full flex items-center justify-between p-6 md:p-8 hover:bg-white transition-colors group">
+            <h2
+              class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-brand-800 flex items-center gap-2 sm:gap-3">
+              <span class="w-6 sm:w-8 h-1 bg-brand-accent rounded-full shrink-0"></span>
+              <span class="truncate">PLACEMENT CO-ORDINATORS</span>
+            </h2>
+            <svg id="arrow-coord" class="w-6 h-6 text-brand-400 transform transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="coordinators-wrapper" class="px-6 pb-8 md:px-8 md:pb-10 transition-all duration-300 ease-in-out">
+            <div id="coordinators-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+          </div>
         </div>
+
+        <div class="border border-gray-100 bg-white/50 rounded-3xl overflow-hidden shadow-sm">
+          <button onclick="toggleSection('webadmin-wrapper', 'arrow-web')"
+            class="w-full flex items-center justify-between p-6 md:p-8 hover:bg-white transition-colors group">
+            <h2
+              class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-brand-800 flex items-center gap-2 sm:gap-3">
+              <span class="w-8 h-1 bg-brand-accent rounded-full"></span>
+              WEB-ADMIN TEAM
+            </h2>
+            <svg id="arrow-web" class="w-6 h-6 text-brand-400 transform transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="webadmin-wrapper" class="px-6 pb-8 md:px-8 md:pb-10 transition-all duration-300 ease-in-out">
+            <div id="webadmin-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+          </div>
+        </div>
+
+        <div class="border border-gray-100 bg-white/50 rounded-3xl overflow-hidden shadow-sm">
+          <button onclick="toggleSection('team-wrapper', 'arrow-team')"
+            class="w-full flex items-center justify-between p-6 md:p-8 hover:bg-white transition-colors group">
+            <h2
+              class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-brand-800 flex items-center gap-2 sm:gap-3">
+              <span class="w-8 h-1 bg-brand-accent rounded-full"></span>
+              PLACEMENT TEAM
+            </h2>
+            <svg id="arrow-team" class="w-6 h-6 text-brand-400 transform transition-transform duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="team-wrapper" class="px-6 pb-8 md:px-8 md:pb-10 transition-all duration-300 ease-in-out">
+            <div id="team-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
+  <script>
 
-    const leadership = [
-      { name: "Prof. Vineet Kansal", role: "Director", dept: "Institute of Engineering and Technology, Lucknow", email: "director@ietlucknow.ac.in", img: "../images/vineet_kansal.jpg", href: "https://www.ietlucknow.ac.in/people/vkansal" },
-      { name: "Dr. Arun Kumar Tiwari", role: "Officer Incharge", dept: "Training & Placement Cell", email: "aruntiwari@ietlucknow.ac.in", img: "../images/arun_tiwari.png", href: "https://www.ietlucknow.ac.in/people/aruntiwari" },
-      { name: "Dr. Pushkar Tripathi", role: "Deputy In-charge", dept: "Training & Placement Cell", email: "pushkar.tripathi@ietlucknow.ac.in", img: "../images/pushkart.jpg", href: "https://www.ietlucknow.ac.in/people/ptripathi" },
-      { name: "Dr. Pragati Shukla", role: "Deputy In-charge", dept: "Training & Placement Cell", email: "pragatishukla@ietlucknow.ac.in", img: "../images/pshukla.jpg", href: "https://www.ietlucknow.ac.in/people/pshukla" }
-    ];
+    function toggleSection(wrapperId, arrowId) {
+      const wrapper = document.getElementById(wrapperId);
+      const arrow = document.getElementById(arrowId);
 
-    const coordinators = [
-      { name: "Akhilesh Pratap Singh", role: "Coordinator", dept: "CSE", phone: "+91 88108 28730", linkedin: "https://www.linkedin.com/in/akhilesh-pratap-singh-3b9048296/" },
-      { name: "Aryan Pandey", role: "Coordinator", dept: "Civil Engineering", phone: "+91 93057 85058", linkedin: "https://www.linkedin.com/in/aryan-pandey-391a30253/" },
-      { name: "Shivansh Gupta", role: "Coordinator", dept: "Chemical Engineering", phone: "+91 99368 21286", linkedin: "https://www.linkedin.com/in/shivansh-gupta07/" }
-    ];
+      if (wrapper.style.display === "none") {
+        wrapper.style.display = "block";
+        arrow.style.transform = "rotate(0deg)";
+      } else {
+        wrapper.style.display = "none";
+        arrow.style.transform = "rotate(-90deg)";
+      }
+    }
 
-    const webAdmins = [
-      { name: "Aayush Vishwakarma", role: "Web Admin", dept: "CSE", phone: "+91 99188 30471", linkedin: "https://www.linkedin.com/in/aayush-vishwakarma-68a8a92a1/" },
-      { name: "Priyanshu Mishra", role: "Web Admin", dept: "CSE", phone: "+91 93693 24363", linkedin: "https://www.linkedin.com/in/priyanshu-mishra-6a1011220/" },
-      { name: "Saumya Srivastava", role: "Web Admin", dept: "MCA", phone: "+91 82991 75668", linkedin: "https://www.linkedin.com/in/saumya-srivastavaa/" }
-    ];
+    document.addEventListener("DOMContentLoaded", () => {
 
-    const teamMembers = [
-      { name: "Aditya Singh", role: "Team Member", dept: "Civil Engineering", phone: "+91 88408 36408", linkedin: "https://www.linkedin.com/in/aditya-singh-96661731b/" },
-      { name: "Affan Ali", role: "Team Member", dept: "Mechanical Engineering", phone: "+91 93363 71280", linkedin: "https://www.linkedin.com/in/affan-ali-25b5781ab/" },
-      { name: "Akash Kapoor", role: "Team Member", dept: "Mechanical Engineering", phone: "+91 75350 0951", linkedin: "https://www.linkedin.com/in/akash-kapoor-4a8382256/" },
-      { name: "Anjali Tomar", role: "Team Member", dept: "Civil Engineering", phone: "+91 86300 59863", linkedin: "https://www.linkedin.com/in/anjali-tomar-71522a266/" },
-      { name: "Ayush Pandey", role: "Team Member", dept: "CSE - AI", phone: "+91 63066 84715", linkedin: "https://www.linkedin.com/in/ayush-pandey-ayushpandey1306/" },
-      { name: "Ayushi Agarwal", role: "Team Member", dept: "CSE", phone: "+91 63934 89820", linkedin: "https://www.linkedin.com/in/ayushi-agarwal-316a1124b/" },
-      { name: "Jannu Hans", role: "Team Member", dept: "CSE", phone: "+91 78893 26956", linkedin: "https://www.linkedin.com/in/jannu-hans-16181a2a1/" },
-      { name: "Prashant Yadav", role: "Team Member", dept: "CSE", phone: "+91 93359 82102", linkedin: "https://www.linkedin.com/in/prashant-radhe/" },
-      { name: "Pratham Dixit", role: "Team Member", dept: "CSE", phone: "+91 63078 03699", linkedin: "https://www.linkedin.com/in/pratham-dixit-7472b7249/" },
-      { name: "Rimjhim Singh", role: "Team Member", dept: "Civil Engineering", phone: "+91 98388 33546", linkedin: "https://www.linkedin.com/in/rimjhim-singh-2457ba25a/" },
-      { name: "Utkarsh Singh", role: "Team Member", dept: "Mechanical Engineering", phone: "+91 87914 03171", linkedin: "https://www.linkedin.com/in/utkarshsingh-iet/" },
-      { name: "Vikrant Singh Tomar", role: "Team Member", dept: "MCA", phone: "+91 93158 39354", linkedin: "https://www.linkedin.com/in/vikrantsinghtomar011/" },
-    ];
+      const leadership = [
+        { name: "Prof. Vineet Kansal", role: "Director", dept: "Institute of Engineering and Technology, Lucknow", email: "director@ietlucknow.ac.in", img: "../images/vineet_kansal.jpg", href: "https://www.ietlucknow.ac.in/people/vkansal" },
+        { name: "Dr. Arun Kumar Tiwari", role: "Officer Incharge", dept: "Training & Placement Cell", email: "aruntiwari@ietlucknow.ac.in", img: "../images/arun_tiwari.png", href: "https://www.ietlucknow.ac.in/people/aruntiwari" },
+        { name: "Dr. Pushkar Tripathi", role: "Deputy In-charge", dept: "Training & Placement Cell", email: "pushkar.tripathi@ietlucknow.ac.in", img: "../images/pushkart.jpg", href: "https://www.ietlucknow.ac.in/people/ptripathi" },
+        { name: "Dr. Pragati Shukla", role: "Deputy In-charge", dept: "Training & Placement Cell", email: "pragatishukla@ietlucknow.ac.in", img: "../images/pshukla.jpg", href: "https://www.ietlucknow.ac.in/people/pshukla" }
+      ];
+
+      const coordinators = [
+        { name: "Akhilesh Pratap Singh", role: "Coordinator", dept: "CSE", phone: "+91 88108 28730", linkedin: "https://www.linkedin.com/in/akhilesh-pratap-singh-3b9048296/" },
+        { name: "Aryan Pandey", role: "Coordinator", dept: "Civil Engineering", phone: "+91 93057 85058", linkedin: "https://www.linkedin.com/in/aryan-pandey-391a30253/" },
+        { name: "Shivansh Gupta", role: "Coordinator", dept: "Chemical Engineering", phone: "+91 99368 21286", linkedin: "https://www.linkedin.com/in/shivansh-gupta07/" }
+      ];
+
+      const webAdmins = [
+        { name: "Aayush Vishwakarma", role: "Web Admin", dept: "CSE", phone: "+91 99188 30471", linkedin: "https://www.linkedin.com/in/aayush-vishwakarma-68a8a92a1/" },
+        { name: "Priyanshu Mishra", role: "Web Admin", dept: "CSE", phone: "+91 93693 24363", linkedin: "https://www.linkedin.com/in/priyanshu-mishra-6a1011220/" },
+        { name: "Saumya Srivastava", role: "Web Admin", dept: "MCA", phone: "+91 82991 75668", linkedin: "https://www.linkedin.com/in/saumya-srivastavaa/" }
+      ];
+
+      const teamMembers = [
+        { name: "Aditya Singh", role: "Team Member", dept: "Civil Engineering", phone: "+91 88408 36408", linkedin: "https://www.linkedin.com/in/aditya-singh-96661731b/" },
+        { name: "Affan Ali", role: "Team Member", dept: "Mechanical Engineering", phone: "+91 93363 71280", linkedin: "https://www.linkedin.com/in/affan-ali-25b5781ab/" },
+        { name: "Akash Kapoor", role: "Team Member", dept: "Mechanical Engineering", phone: "+91 75350 0951", linkedin: "https://www.linkedin.com/in/akash-kapoor-4a8382256/" },
+        { name: "Anjali Tomar", role: "Team Member", dept: "Civil Engineering", phone: "+91 86300 59863", linkedin: "https://www.linkedin.com/in/anjali-tomar-71522a266/" },
+        { name: "Ayush Pandey", role: "Team Member", dept: "CSE - AI", phone: "+91 63066 84715", linkedin: "https://www.linkedin.com/in/ayush-pandey-ayushpandey1306/" },
+        { name: "Ayushi Agarwal", role: "Team Member", dept: "CSE", phone: "+91 63934 89820", linkedin: "https://www.linkedin.com/in/ayushi-agarwal-316a1124b/" },
+        { name: "Jannu Hans", role: "Team Member", dept: "CSE", phone: "+91 78893 26956", linkedin: "https://www.linkedin.com/in/jannu-hans-16181a2a1/" },
+        { name: "Prashant Yadav", role: "Team Member", dept: "CSE", phone: "+91 93359 82102", linkedin: "https://www.linkedin.com/in/prashant-radhe/" },
+        { name: "Pratham Dixit", role: "Team Member", dept: "CSE", phone: "+91 63078 03699", linkedin: "https://www.linkedin.com/in/pratham-dixit-7472b7249/" },
+        { name: "Rimjhim Singh", role: "Team Member", dept: "Civil Engineering", phone: "+91 98388 33546", linkedin: "https://www.linkedin.com/in/rimjhim-singh-2457ba25a/" },
+        { name: "Utkarsh Singh", role: "Team Member", dept: "Mechanical Engineering", phone: "+91 87914 03171", linkedin: "https://www.linkedin.com/in/utkarshsingh-iet/" },
+        { name: "Vikrant Singh Tomar", role: "Team Member", dept: "MCA", phone: "+91 93158 39354", linkedin: "https://www.linkedin.com/in/vikrantsinghtomar011/" },
+      ];
 
 
-    function createCard(person, isLarge = false) {
-      const initials = person.name.split(' ').map(n => n[0]).join('');
-      
-      // SIZE CONFIGURATIONS
-      const imgSize = isLarge ? 'w-32 h-32 md:w-40 md:h-40' : 'w-20 h-20';
-      const cardPadding = isLarge ? 'p-8 md:p-10' : 'p-6';
-      const nameText = isLarge ? 'text-2xl md:text-3xl font-black' : 'text-lg font-extrabold';
-      const roleText = isLarge ? 'text-xs tracking-[0.2em]' : 'text-[10px] tracking-[0.15em]';
-      
-      // Base classes including cursor-pointer for Large cards
-      const baseClasses = `flex flex-col sm:flex-row items-center sm:items-start gap-8 group block overflow-hidden`;
-      const cardClass = isLarge 
-        ? `${baseClasses} bg-white border-2 border-brand-100 rounded-[2.5rem] shadow-md hover:shadow-2xl hover:border-brand-accent hover:-translate-y-1 transition-all duration-300` 
-        : `${baseClasses} bg-white border-2 border-gray-100 rounded-3xl shadow-sm hover:shadow-xl hover:border-brand-accent/40 transition-all duration-300`;
+      function createCard(person, isLarge = false) {
+        const initials = person.name.split(' ').map(n => n[0]).join('');
+        const imgSize = isLarge ? 'w-32 h-32 md:w-40 md:h-40' : 'w-20 h-20';
+        const cardPadding = isLarge ? 'p-8 md:p-10' : 'p-6';
+        const nameText = isLarge ? 'text-2xl md:text-3xl font-black' : 'text-lg font-extrabold';
+        const roleText = isLarge ? 'text-xs tracking-[0.2em]' : 'text-[10px] tracking-[0.15em]';
+        const baseClasses = `flex flex-col sm:flex-row items-center sm:items-start gap-8 group block overflow-hidden`;
+        const cardClass = isLarge
+          ? `${baseClasses} bg-white border-2 border-brand-100 rounded-[2.5rem] shadow-md hover:shadow-2xl hover:border-brand-accent hover:-translate-y-1 transition-all duration-300`
+          : `${baseClasses} bg-white border-2 border-gray-100 rounded-3xl shadow-sm hover:shadow-xl hover:border-brand-accent/40 transition-all duration-300`;
 
-      const imgHtml = person.img
-        ? `<img src="${person.img}" alt="${person.name}" class="${imgSize} rounded-2xl object-cover shadow-md shrink-0 border-2 border-white">`
-        : `<div class="${imgSize} rounded-2xl bg-brand-50 flex items-center justify-center text-brand-800 font-bold ${isLarge ? 'text-4xl' : 'text-xl'} shrink-0 border-2 border-brand-100">${initials}</div>`;
+        const imgHtml = person.img
+          ? `<img src="${person.img}" alt="${person.name}" class="${imgSize} rounded-2xl object-cover shadow-md shrink-0 border-2 border-white">`
+          : `<div class="${imgSize} rounded-2xl bg-brand-50 flex items-center justify-center text-brand-800 font-bold ${isLarge ? 'text-4xl' : 'text-xl'} shrink-0 border-2 border-brand-100">${initials}</div>`;
 
-      // Define the card content
-      const cardInnerContent = `
+        const cardInnerContent = `
             ${imgHtml}
             <div class="flex-1 min-w-0 text-center sm:text-left">
                 <div class="${roleText} font-extrabold text-brand-accent uppercase mb-2 opacity-90">${person.role}</div>
                 <div class="${nameText} text-brand-800 truncate group-hover:text-brand-700 leading-tight">${person.name}</div>
                 <div class="${isLarge ? 'text-base mt-1' : 'text-sm'} text-muted font-medium mb-6">${person.dept}</div>
-                
                 <div class="flex flex-wrap justify-center sm:justify-start gap-3">
-                    ${person.email ? `
-                    <button onclick="event.stopPropagation(); window.location.href='mailto:${person.email}'" class="flex items-center gap-2 px-4 py-2.5 bg-brand-50 rounded-xl text-brand-700 hover:bg-brand-700 hover:text-white transition-all duration-200 border border-brand-100/50">
-                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                        <span class="text-xs font-bold truncate max-w-[200px] sm:max-w-none">${person.email}</span>
-                    </button>` : ''}
-
-                    ${person.phone ? `
-                    <button onclick="event.stopPropagation(); window.location.href='tel:${person.phone}'" class="p-3 bg-gray-50 rounded-xl text-brand-700 hover:bg-brand-700 hover:text-white transition-all duration-200 border border-gray-100" title="Call">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                        </svg>
-                    </button>` : ''}
-
-                    ${person.linkedin ? `
-                    <button onclick="event.stopPropagation(); window.open('${person.linkedin}', '_blank')" class="p-3 bg-[#0A66C215] rounded-xl text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-200 border border-[#0A66C2]/10" title="LinkedIn">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </button>` : ''}
+                    ${person.email ? `<button onclick="event.stopPropagation(); window.location.href='mailto:${person.email}'" class="flex items-center gap-2 px-4 py-2.5 bg-brand-50 rounded-xl text-brand-700 hover:bg-brand-700 hover:text-white transition-all duration-200 border border-brand-100/50"><span class="text-xs font-bold truncate">${person.email}</span></button>` : ''}
+                    ${person.phone ? `<button onclick="event.stopPropagation(); window.location.href='tel:${person.phone}'" class="p-3 bg-gray-50 rounded-xl text-brand-700 hover:bg-brand-700 hover:text-white transition-all duration-200 border border-gray-100"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></button>` : ''}
+                    ${person.linkedin ? `<button onclick="event.stopPropagation(); window.open('${person.linkedin}', '_blank')" class="p-3 bg-[#0A66C215] rounded-xl text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-200 border border-[#0A66C2]/10"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></button>` : ''}
                 </div>
             </div>
       `;
 
-      // If person has an href (leadership), wrap in <a>. Otherwise use <div>.
-      if (person.href) {
-        return `
-          <a href="${person.href}" target="_blank" class="${cardClass} ${cardPadding}">
-            ${cardInnerContent}
-          </a>
-        `;
-      } else {
-        return `
-          <div class="${cardClass} ${cardPadding}">
-            ${cardInnerContent}
-          </div>
-        `;
+        if (person.href) {
+          return `<a href="${person.href}" target="_blank" class="${cardClass} ${cardPadding}">${cardInnerContent}</a>`;
+        } else {
+          return `<div class="${cardClass} ${cardPadding}">${cardInnerContent}</div>`;
+        }
       }
-    }
 
-    const leadershipGrid = document.getElementById('leadership-grid');
-    const coordinatorsGrid = document.getElementById('coordinators-grid');
-    const webadminGrid = document.getElementById('webadmin-grid');
-    const teamGrid = document.getElementById('team-grid');
+      const leadershipGrid = document.getElementById('leadership-grid');
+      const coordinatorsGrid = document.getElementById('coordinators-grid');
+      const webadminGrid = document.getElementById('webadmin-grid');
+      const teamGrid = document.getElementById('team-grid');
 
-    leadership.forEach(p => leadershipGrid.innerHTML += createCard(p, true));
-    coordinators.forEach(p => coordinatorsGrid.innerHTML += createCard(p, false));
-    webAdmins.forEach(p => webadminGrid.innerHTML += createCard(p, false));
-    teamMembers.forEach(p => teamGrid.innerHTML += createCard(p, false));
-  });
-</script>
+      leadership.forEach(p => leadershipGrid.innerHTML += createCard(p, true));
+      coordinators.forEach(p => coordinatorsGrid.innerHTML += createCard(p, false));
+      webAdmins.forEach(p => webadminGrid.innerHTML += createCard(p, false));
+      teamMembers.forEach(p => teamGrid.innerHTML += createCard(p, false));
+    });
+  </script>
 
 
 
