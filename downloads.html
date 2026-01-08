@@ -37,227 +37,174 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body class="bg-white text-brand-800 antialiased font-['Poppins']">
     <!-- Header -->
-    <header id="top" class="sticky top-0 z-50 backdrop-blur bg-white/90 border-b border-gray-100 shadow-sm">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="flex items-center justify-between py-3">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="bg-brand-800 text-white rounded-xl p-1 shadow-glow-sm">
-          <img class="w-12 h-12" src="/images/logo.png" alt="ietlogo">
-        </div>
-        <div>
-          <div class="sm:text-lg text-xs font-extrabold text-brand-800">Training & Placement Cell</div>
-          <div class="text-xs text-muted">Institute of Engineering & Technology, Lucknow</div>
-        </div>
-      </a>
+   <header id="top" class="sticky top-0 z-50 backdrop-blur bg-white/90 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3">
+        <a href="index.html" class="flex items-center gap-3 sm:gap-3">
+          <div class="bg-brand-800 text-white rounded-xl p-1 shadow-glow-sm flex-shrink-0">
+            <img class="w-10 h-10 sm:w-12 sm:h-12" src="/images/logo.png" alt="ietlogo">
+          </div>
+          <div class="min-w-0">
+            <div class="sm:text-lg text-xs font-extrabold text-brand-800">Training & Placement Cell</div>
+            <div class="text-[10px] sm:text-xs text-muted">Institute of Engineering & Technology, Lucknow</div>
+          </div>
+        </a>
 
-      
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium relative">
+        <!-- DESKTOP NAV -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium relative">
 
-        <a href="tpc/aboutus.html" class="text-muted hover:text-brand-800 transition-colors">About Us</a>
+          <a href="tpc/aboutus.html" class="text-muted hover:text-brand-800 transition-colors">About Us</a>
 
-        
-        <div class="relative" id="insights-parent">
-          <button id="insights-btn" aria-expanded="false" class="inline-flex items-center gap-2 text-muted hover:text-brand-800 transition-colors">
-            INSIGHTS
-            <svg class="w-3 h-3 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
+          <!-- INSIGHTS DROPDOWN -->
+          <div class="relative group">
+            <button class="inline-flex items-center gap-2 text-muted hover:text-brand-800 transition">
+              INSIGHTS
+              <svg class="w-3 h-3 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
 
-          <div id="insights-panel"
-               class="absolute left-1/2 transform -translate-x-1/2 mt-4 w-[320px] bg-white border border-gray-100 rounded-xl shadow-lg z-40 opacity-0 pointer-events-none transition-all duration-150"
-               role="menu" aria-labelledby="insights-btn">
-            <div class="divide-y">
-              <a href="insights/aboutiet.html" class="block px-6 py-3 hover:bg-gray-50 text-sm text-brand-800">ABOUT IET</a>
-              <a href="insights/message.html" class="block px-6 py-3 hover:bg-gray-50 text-sm text-muted">MESSAGE</a>
-              <a href="https://www.ietlucknow.ac.in/acad/publications" class="block px-6 py-3 hover:bg-gray-50 text-sm text-muted">FACULTY PUBLICATION</a>
-              <a href="insights/recruiters.html" class="block px-6 py-3 hover:bg-gray-50 text-sm text-muted">PAST RECRUITERS</a>
+            <div
+              class="absolute left-1/2 -translate-x-1/2 mt-4 w-[320px] bg-white border border-gray-100 rounded-xl shadow-lg z-40 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200">
+              <div class="divide-y">
+                <a href="insights/aboutiet.html" class="block px-6 py-3 hover:bg-gray-50 text-sm text-brand-800">ABOUT
+                  IET</a>
+                <a href="insights/message.html" class="block px-6 py-3 hover:bg-gray-50 text-sm text-muted">MESSAGE</a>
+                <a href="https://www.ietlucknow.ac.in/acad/publications"
+                  class="block px-6 py-3 hover:bg-gray-50 text-sm text-muted">FACULTY PUBLICATION</a>
+                <a href="insights/recruiters.html" class="block px-6 py-3 hover:bg-gray-50 text-sm text-muted">PAST
+                  RECRUITERS</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        
-        <div class="relative" id="recruiter-parent">
-          <button id="recruiter-btn" aria-expanded="false" class="inline-flex items-center gap-2 text-muted hover:text-brand-800 transition-colors">
-            FOR RECRUITER
-            <svg class="w-3 h-3 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
+          <!-- RECRUITER DROPDOWN -->
+          <div class="relative group">
+            <button class="inline-flex items-center gap-2 text-muted hover:text-brand-800 transition">
+              FOR RECRUITER
+              <svg class="w-3 h-3 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
 
-          <div id="recruiter-panel"
-               class="absolute left-1/2 transform -translate-x-1/2 mt-4 w-[380px] bg-white border border-gray-100 rounded-xl shadow-lg z-40 opacity-0 pointer-events-none transition-all duration-150"
-               role="menu" aria-labelledby="recruiter-btn">
-            <div class="p-4">
-              <div class="grid grid-cols-1 gap-2">
-                <a href="recruiters/invitation.html" class="block px-4 py-2 rounded hover:bg-gray-50 text-sm text-brand-800">INVITATION</a>
-                <a href="recruiters/procedure.html" class="block px-4 py-2 rounded hover:bg-gray-50 text-sm text-muted">PROCEDURE</a>
-                <a href="recruiters/ContactForm.html" class="block px-4 py-2 rounded hover:bg-gray-50 text-sm text-muted">COMPANY CONTACT FORM</a>
-                <a href="recruiters/demographic.html" class="block px-4 py-2 rounded hover:bg-gray-50 text-sm text-muted">DEMOGRAPHIC</a>
+            <div
+              class="absolute left-1/2 -translate-x-1/2 mt-4 w-[380px] bg-white border border-gray-100 rounded-xl shadow-lg z-40 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200">
+              <div class="p-4 space-y-1">
 
-                <div class="mt-3 border-t pt-3">
-                  <div class="text-xs font-semibold text-muted px-1 mb-2">Downloads</div>
-                  <a href="files/Placement_Brouchure_2025-26.pdf" class="flex items-center gap-3 px-2 py-2 rounded hover:bg-gray-50 text-sm">
-                    <svg class="w-4 h-4 text-brand-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l-4-4m4 4 4-4M21 21H3"/></svg>
-                    <span class="text-muted">PLACEMENT BROCHURE</span>
-                  </a>
-                  <a href="files/JNF_IET_Lucknow_2025-26.docx" class="flex items-center gap-3 px-2 py-2 rounded hover:bg-gray-50 text-sm">
-                    <svg class="w-4 h-4 text-brand-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l-4-4m4 4 4-4M21 21H3"/></svg>
-                    <span class="text-muted">JOB NOTIFICATION FORM</span>
-                  </a>
-                  <a href="files/Company_Guidlines_21-22.pdf" class="flex items-center gap-3 px-2 py-2 rounded hover:bg-gray-50 text-sm">
-                    <svg class="w-4 h-4 text-brand-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l-4-4m4 4 4-4M21 21H3"/></svg>
-                    <span class="text-muted">COMPANY GUIDELINES</span>
-                  </a>
+                <a href="recruiters/invitation.html"
+                  class="block px-4 py-2 hover:bg-gray-50 text-sm text-brand-800">INVITATION</a>
+                <a href="recruiters/procedure.html"
+                  class="block px-4 py-2 hover:bg-gray-50 text-sm text-muted">PROCEDURE</a>
+                <a href="recruiters/ContactForm.html"
+                  class="block px-4 py-2 hover:bg-gray-50 text-sm text-muted">COMPANY CONTACT FORM</a>
+                <a href="recruiters/demographic.html"
+                  class="block px-4 py-2 hover:bg-gray-50 text-sm text-muted">DEMOGRAPHIC</a>
+
+                <div class="pt-3 border-t">
+                  <div class="text-xs font-semibold text-muted mb-2 px-1">Downloads</div>
+
+                  <a href="files/Placement_Brouchure_2025-26.pdf"
+                    class="block px-2 py-2 hover:bg-gray-50 text-sm">Placement Brochure</a>
+                  <a href="files/JNF_IET_Lucknow_2025-26.docx" class="block px-2 py-2 hover:bg-gray-50 text-sm">Job
+                    Notification Form</a>
+                  <a href="files/Company_Guidlines_21-22.pdf" class="block px-2 py-2 hover:bg-gray-50 text-sm">Company
+                    Guidelines</a>
                 </div>
               </div>
             </div>
           </div>
+
+          <a href="downloads.html" class="text-muted hover:text-brand-800 transition-colors">Downloads</a>
+          <a href="tpc/contactus.html"
+            class="bg-brand-700 hover:bg-brand-800 text-white px-4 py-2 rounded-full shadow transition-all">Contact
+            Us</a>
+        </nav>
+
+        <!-- MOBILE BUTTON -->
+        <div class="lg:hidden">
+          <button id="mobile-open" class="p-2 rounded-md text-brand-800 hover:bg-gray-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-
-        <a href="downloads.html" class="text-muted hover:text-brand-800 transition-colors">Downloads</a>
-
-        <a href="tpc/contactus.html" class="bg-brand-700 hover:bg-brand-800 text-white px-4 py-2 rounded-full shadow transition-all">Contact Us</a>
-      </nav>
-
-      
-      <div class="lg:hidden">
-        <button id="mobile-open" aria-label="Open menu" class="p-2 rounded-md text-brand-800 hover:bg-gray-100">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
       </div>
     </div>
-  </div>
 
- 
-  <div id="mobile-menu" class="hidden lg:hidden border-t bg-white shadow-md">
-    <div class="px-6 py-4 space-y-3">
-      <a href="tpc/aboutus.html" class="block py-2 text-brand-800 font-medium">About</a>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t bg-white shadow-md">
+      <div class="px-6 py-4 space-y-3">
 
-      <div>
-        <button class="w-full flex items-center justify-between py-2 text-left text-brand-800 font-medium mobile-toggle" data-target="mobile-insights">
-          Insights
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div id="mobile-insights" class="hidden pl-4 mt-2 space-y-2">
-          <a href="insights/aboutiet.html" class="block py-2 text-muted">About IET</a>
-          <a href="insights/message.html" class="block py-2 text-muted">Message</a>
-          <a href="https://www.ietlucknow.ac.in/acad/publications" class="block py-2 text-muted">Faculty Publication</a>
-          <a href="insights/recruiters.html" class="block py-2 text-muted">Past Recruiters</a>
-        </div>
-      </div>
+        <a href="tpc/aboutus.html" class="block py-2 text-brand-800 font-medium">About</a>
 
-      <div>
-        <button class="w-full flex items-center justify-between py-2 text-left text-brand-800 font-medium mobile-toggle" data-target="mobile-recruiter">
-          For Recruiter
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div id="mobile-recruiter" class="hidden pl-4 mt-2 space-y-2">
-          <a href="recruiters/invitation.html" class="block py-2 text-muted">Invitation</a>
-          <a href="recruiters/procedure.html" class="block py-2 text-muted">Procedure</a>
-          <a href="recruiters/ContactForm.html" class="block py-2 text-muted">Company Contact Form</a>
-          <a href="recruiters/demographic.html" class="block py-2 text-muted">Demographic</a>
+        <!-- Insights -->
+        <div>
+          <button class="w-full flex justify-between py-2 text-brand-800 font-medium mobile-toggle"
+            data-target="mobile-insights">
+            Insights
+            <span>▼</span>
+          </button>
 
-          <div class="pt-2 border-t mt-2">
-            <a href="files/Placement_Brouchure_2025-26.pdf" class="block py-2 text-muted flex items-center gap-2"><svg class="w-4 h-4 text-brand-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l-4-4m4 4 4-4M21 21H3"/></svg>Placement Brochure</a>
-            <a href="files/JNF_IET_Lucknow_2025-26.docx" class="block py-2 text-muted flex items-center gap-2"><svg class="w-4 h-4 text-brand-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l-4-4m4 4 4-4M21 21H3"/></svg>Job Notification Form</a>
-            <a href="files/Company_Guidlines_21-22.pdf" class="block py-2 text-muted flex items-center gap-2"><svg class="w-4 h-4 text-brand-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0l-4-4m4 4 4-4M21 21H3"/></svg>Company Guidelines</a>
+          <div id="mobile-insights" class="hidden pl-4 mt-2 space-y-2">
+            <a href="insights/aboutiet.html" class="block py-2 text-muted">About IET</a>
+            <a href="insights/message.html" class="block py-2 text-muted">Message</a>
+            <a href="https://www.ietlucknow.ac.in/acad/publications" class="block py-2 text-muted">Faculty
+              Publication</a>
+            <a href="insights/recruiters.html" class="block py-2 text-muted">Past Recruiters</a>
           </div>
         </div>
-      </div>
 
-      <a href="downloads.html" class="block py-2 text-brand-800 font-medium">Downloads</a>
-      <a href="tpc/contactus.html" class="block bg-brand-700 text-white px-4 py-2 rounded-md text-center font-medium mt-2">Contact Us</a>
+        <!-- Recruiter -->
+        <div>
+          <button class="w-full flex justify-between py-2 text-brand-800 font-medium mobile-toggle"
+            data-target="mobile-recruiter">
+            For Recruiter
+            <span>▼</span>
+          </button>
+
+          <div id="mobile-recruiter" class="hidden pl-4 mt-2 space-y-2">
+            <a href="recruiters/invitation.html" class="block py-2 text-muted">Invitation</a>
+            <a href="recruiters/procedure.html" class="block py-2 text-muted">Procedure</a>
+            <a href="recruiters/ContactForm.html" class="block py-2 text-muted">Company Contact Form</a>
+            <a href="recruiters/demographic.html" class="block py-2 text-muted">Demographic</a>
+          </div>
+        </div>
+
+        <a href="downloads.html" class="block py-2 text-brand-800 font-medium">Downloads</a>
+        <a href="tpc/contactus.html"
+          class="block bg-brand-700 text-white px-4 py-2 rounded-md text-center font-medium">Contact Us</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
 
 <script>
- 
-  function showPanel(btn, panel) {
-    btn.setAttribute('aria-expanded', 'true');
-    panel.classList.remove('opacity-0','pointer-events-none','-translate-y-2');
-    panel.classList.add('opacity-100','pointer-events-auto','translate-y-0');
-  }
-  function hidePanel(btn, panel) {
-    btn.setAttribute('aria-expanded', 'false');
-    panel.classList.add('opacity-0','pointer-events-none');
-    panel.classList.remove('opacity-100','pointer-events-auto','translate-y-0');
-  }
+    document.addEventListener("DOMContentLoaded", () => {
 
-  
-  (function(){
-    const parent = document.getElementById('insights-parent');
-    const btn = document.getElementById('insights-btn');
-    const panel = document.getElementById('insights-panel');
+      /* MOBILE MENU BUTTON */
+      const mobileBtn = document.getElementById("mobile-open");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-    
-    panel.classList.add('-translate-y-2');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
 
-   
-    [parent, btn, panel].forEach(el => {
-      el.addEventListener('mouseenter', () => showPanel(btn, panel));
-      el.addEventListener('focusin', () => showPanel(btn, panel));
-      el.addEventListener('mouseleave', (e) => {
-      
-        setTimeout(() => {
-          if (!parent.matches(':hover') && !panel.matches(':hover') && document.activeElement !== btn && !panel.contains(document.activeElement)) {
-            hidePanel(btn, panel);
-          }
-        }, 60);
+      /* MOBILE DROPDOWN ACCORDIONS */
+      document.querySelectorAll(".mobile-toggle").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const panel = document.getElementById(btn.dataset.target);
+          if (panel) panel.classList.toggle("hidden");
+        });
       });
+
     });
-
-    
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') hidePanel(btn, panel);
-    });
-  })();
-
-  
-  (function(){
-    const parent = document.getElementById('recruiter-parent');
-    const btn = document.getElementById('recruiter-btn');
-    const panel = document.getElementById('recruiter-panel');
-
-    panel.classList.add('-translate-y-2');
-
-    [parent, btn, panel].forEach(el => {
-      el.addEventListener('mouseenter', () => showPanel(btn, panel));
-      el.addEventListener('focusin', () => showPanel(btn, panel));
-      el.addEventListener('mouseleave', () => {
-        setTimeout(() => {
-          if (!parent.matches(':hover') && !panel.matches(':hover') && document.activeElement !== btn && !panel.contains(document.activeElement)) {
-            hidePanel(btn, panel);
-          }
-        }, 60);
-      });
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') hidePanel(btn, panel);
-    });
-  })();
-
-  
-  document.getElementById('mobile-open').addEventListener('click', function(){
-    const mm = document.getElementById('mobile-menu');
-    mm.classList.toggle('hidden');
-  });
-
-
-  document.querySelectorAll('.mobile-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.target;
-      const el = document.getElementById(target);
-      if (!el) return;
-      el.classList.toggle('hidden');
-    });
-  });
-</script>
+  </script>
 
    <main class="bg-gray-50/50 py-16" id="downloads">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -497,7 +444,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <div class="text-sm text-white/70 text-center px-4">© 2025 Institute of Engineering &amp; Technology, Lucknow. All Rights Reserved.</div>
 
-      <div><a href="#top" class="text-sm underline hover:no-underline whitespace-nowrap">Go to Top</a></div>
+      <div><a href="#downloads" class="text-sm underline hover:no-underline whitespace-nowrap">Go to Top</a></div>
     </div>
   </div>
 </footer>

@@ -153,3 +153,12 @@ body {
     .stat-number {
       transition: all 1s ease-out;
     }
+
+    html {
+  scroll-behavior: smooth;
+}
+
+
+#top {
+  scroll-margin-top: 100px; 
+}
